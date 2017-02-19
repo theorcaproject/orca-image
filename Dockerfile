@@ -48,6 +48,6 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
-EXPOSE 8080 5001
+EXPOSE 8080 5001 5002
 CMD ["supervisord", "-n"]
 
