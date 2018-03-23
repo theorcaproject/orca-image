@@ -36,5 +36,3 @@ RUN apt-get update && apt-get install -y mongodb-org
 # Build me a new image plz, and now for realz
 EXPOSE 8080 5001 5002
 CMD ["supervisord", "-n"]
-
-#Trigger image build
