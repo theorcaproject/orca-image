@@ -33,6 +33,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14
 RUN echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.4.list
 RUN apt-get update && apt-get install -y mongodb-org
 
-# Build me a new image plz, and now for realz
+# Build me a new image plz, and now for realz - 
 EXPOSE 8080 5001 5002
 CMD ["supervisord", "-n"]
