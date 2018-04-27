@@ -13,8 +13,8 @@ COPY orca-web-uwsgi.ini /app/orca-web-uwsgi.ini
 COPY supervisorctl-app.conf /etc/supervisor/conf.d/
 
 # Clone and build the orca trainer
-RUN wget https://storage.googleapis.com/golang/go1.7.4.linux-amd64.tar.gz
-RUN tar -xvf go1.7.4.linux-amd64.tar.gz
+RUN wget https://storage.googleapis.com/golang/go1.10.1.linux-amd64.tar.gz
+RUN tar -xvf go1.10.1.linux-amd64.tar.gz
 RUN mv go /usr/local
 RUN export GOROOT=/usr/local/go
 
