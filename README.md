@@ -1,5 +1,4 @@
 # orca-image
-
 >> TO RUN:
 
 $> docker pull orca-image:latest
